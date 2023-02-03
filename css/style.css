@@ -1,0 +1,245 @@
+/*
+Author: Aswathi SA
+Date: 02/01/2023
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p {
+	line-height: 30px;
+}
+.banner {
+	background-image: url(../images/academy-banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: right;
+	justify-content: center;
+	padding: 10%;
+	height: 100vh;
+}
+.banner_head {
+	width: 50%;
+	font-size: 30px;
+	margin-top: 2%;
+	color: #1e2531;
+}
+p {
+	font-family: "Roboto", sans-serif;
+	font-weight: 100;
+}
+h1 {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+}
+/*banner closed*/
+.second {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	margin-top: 25px;
+}
+.about_course {
+	display: flex;
+	flex-wrap: wrap;
+}
+.image {
+	width: 40%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+.course_specialities {
+	height: fit-content;
+	background-color: #1e2531;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	margin-left: -2%;
+	padding: 2%;
+}
+.course_specialities h3 {
+	font-size: 25px;
+	color: #5b8fb9;
+	margin-bottom: 3%;
+}
+h3::before {
+	content: "{";
+	color: #f00;
+}
+h3::after {
+	content: "}";
+	color: #f00;
+}
+.about_course_details {
+	text-align: center;
+	color: #252525;
+	margin-top: 20px;
+	padding: 2% 10%;
+	font-size: 20px;
+	width: 80%;
+	margin: auto;
+}
+/*second closed*/
+.courses {
+	background-image: url(../images/modulebg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.course_container {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	height: 100vh;
+}
+.course_container div {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	width: 20%;
+	border-radius: 10px;
+	font-size: 20px;
+}
+/*course closed*/
+.php {
+	margin-top: 3%;
+	height: 100vh;
+}
+.php_development {
+	width: 70%;
+	margin: auto;
+	font-size: larger;
+	text-align: center;
+}
+.align {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 5%;
+}
+.feature {
+	width: 50%;
+	height: 60vh;
+	background-image: url(../images/testsbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.features {
+	width: 50%;
+	height: 60vh;
+	background-image: url(../images/intrvwbg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.arrange {
+	width: 90%;
+	height: 85%;
+	margin: 5%;
+	color: #fff;
+	background-color: rgba(6, 8, 11, 0.7);
+	font-size: x-large;
+	line-height: 30px;
+	padding: 20%;
+}
+/*Second last div closed*/
+.last_div {
+	width: 50%;
+	margin: auto;
+}
+.last_div h1 {
+	text-align: center;
+	color: #181e22;
+	font-size: 50px;
+}
+.button {
+	padding: 2%;
+	border: 2px solid #f26422;
+	width: 20%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+.button a {
+	color: #f26422;
+	text-decoration: none;
+	font-size: larger;
+	font-weight: bold;
+}
+.contact {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+.contact div {
+	margin-bottom: 10%;
+	margin-top: 5%;
+}
+
+.address {
+	width: 45%;
+	padding: 2%;
+}
+.address h2 {
+	align-items: center;
+}
+/*completed*/
+@media screen and (max-width: 576px) {
+	* {
+		box-sizing: border-box;
+	}
+	.banner {
+		background-image: none;
+		background-color: #ccc;
+		width: 100%;
+	}
+	.image {
+		margin-left: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.course_specialities {
+		position: static;
+		left: 0;
+		width: 100%;
+		font-size: 15px;
+	}
+	.align {
+		display: flex;
+		flex-direction: column;
+	}
+	.feature {
+		width: 100%;
+	}
+	.features {
+		width: 100%;
+	}
+	.last_div {
+		margin-top: 100%;
+	}
+	.button {
+		width: 50%;
+	}
+	.address {
+		width: 50%;
+		font-size: small;
+	}
+	.course_container {
+		height: fit-content;
+	}
+	.course_container div {
+		width: 40%;
+	}
+}
